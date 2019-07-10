@@ -1,3 +1,10 @@
+# IMPORTANT: Git changed the following files to CRLF line endings!!! You will have to change them back to LF in order for it to work!!!
+warning: LF will be replaced by CRLF in mongodb/mongo-create-admin.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in mongodb/mongo-create-express.js.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in mongodb/run.sh.
+
 # Express Demo
 Welcome to the git repository for the Express Demo project.
 
@@ -17,14 +24,19 @@ On Windows use docker toolbox it comes with docker and docker-compose
 
 ## Getting started
 1) Pull this repo
-2a) Install Docker for Windows - If windows 7 use docker toolbox and go to step 2b, 2c, 2d and 2e if on Windows 10 just use normal Docker for windows and skip to step 3
-2b) On windows create a docker-machine - this is needed to run the docker containers inside of.
+2) Install Docker for Windows - If windows 7 use docker toolbox follow the steps below on Windows 10 just use normal Docker for windows and skip to step 3
+    
+    On windows create a docker-machine - this is needed to run the docker containers inside of.
     `$ docker-machine create -d "virtualbox" express-machine`
-2c) Start the docker machine
+    
+    Start the docker machine
     `$ docker-machine start express-machine`
-2d) Run the command
+    
+    Run the command
     `$ docker-machine env`
-2e) Copy the last line from the output of that last command and paste it into your shell, this will configure it properly
+    
+    Copy the last line from the output of that last command and paste it into your shell, this will configure it properly
+
 3) Go into the express folder and run the following command to install all the required node packages
     `$ npm ci` 
 4) Navigate to project directory
