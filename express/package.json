@@ -1,0 +1,39 @@
+{
+  "name": "ExpressDemo",
+  "version": "1.0.0",
+  "description": "An Express Demo Project",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon",
+    "start": "node ./dist/server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "author": "Aydin Erdas <erdas001@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.24.0",
+    "mongoose": "^5.3.15",
+    "morgan": "^1.9.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.34",
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.16.0",
+    "@types/jsonwebtoken": "^8.3.0",
+    "@types/mongodb": "^3.1.17",
+    "@types/mongoose": "^5.3.4",
+    "@types/node": "^10.12.12",
+    "@types/passport": "^0.4.7",
+    "@types/passport-jwt": "^3.0.1",
+    "@types/uuid": "^3.4.4",
+    "nodemon": "^1.18.7",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  }
+}

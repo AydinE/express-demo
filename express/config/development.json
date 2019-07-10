@@ -1,0 +1,10 @@
+{
+  "mongodb": {
+    "host": "mongodb.expressdemo",
+    "options": {
+      "user": "expressdemo",
+      "pass": "expressdemo",
+      "dbName": "expressdemo"
+    }
+  }
+}

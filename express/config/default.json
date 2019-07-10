@@ -1,0 +1,15 @@
+{
+  "mongodb": {
+    "host": "",
+    "port": 27017,
+    "options": {
+      "user": "",
+      "pass": "",
+      "dbName": "",
+      "useNewUrlParser": true,
+      "useCreateIndex": true,
+      "reconnectTries": 5,
+      "reconnectInterval": 1000
+    }
+  }
+}

@@ -1,0 +1,33 @@
+version: "2"
+
+networks:
+  express-net:
+
+volumes:
+  mongodb:
+
+services:
+  express.expressdemo:
+    build:
+      context: ./express
+    working_dir: /home/node/app
+    volumes:
+      - ./express:/home/node/app
+    expose:
+      - "8080"
+    depends_on:
+     - mongodb.expressdemo
+    networks:
+      - express-net
+
+  mongodb.expressdemo:
+    user: root
+    build:
+      context: ./mongodb
+    expose:
+      - "27017"
+      - "27018"
+    volumes:
+      - 'mongodb:/data'
+    networks:
+      - express-net

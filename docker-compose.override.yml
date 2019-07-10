@@ -1,0 +1,22 @@
+# This docker override is only used for development on local machines.
+version: "2"
+
+services:
+
+  express.expressdemo:
+    user: node
+    environment:
+      - NODE_ENV=development
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+      - CHOKIDAR_USEPOLLING=true
+    command: "npm run dev"
+    expose:
+      - "9229"
+    ports:
+      - "0.0.0.0:8080:8080"
+      - "0.0.0.0:9229:9229"
+
+  mongodb.expressdemo:
+    ports:
+      - "0.0.0.0:27017:27017"
+      - "0.0.0.0:27018:27018"
